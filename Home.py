@@ -6,3 +6,5 @@ st.set_page_config(
 )
 
 st.title("AI Risk Learning Platform")
+
+st.image('Safe-cuate.png')
