@@ -17,8 +17,10 @@ with col2:
              you can implement in your code to mitigate them. Through this course, wou will learn how to implement privacy-preserving techniques
              including: differential privacy, synthetic data, and homomorphic encryption.''')
     
-st.write()
-st.write("Courses")
+st.write("")
+st.write("")
+st.write("")
+st.write("")
 
 course1, course2, course3, course4 = st.columns(4)
 
