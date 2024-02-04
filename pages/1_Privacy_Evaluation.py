@@ -29,7 +29,7 @@ if uploaded_file:
             prop = fm.FontProperties(fname=font_path)
             rcParams["font.family"] = prop.get_name()
 
-            plt.rc('grid' linestyle="-", color='white', linewidth=1, alpha=1)
+            plt.rc('grid', linestyle="-", color='white', linewidth=1, alpha=1)
             plt.figure(figsize=(6, 6), facecolor="#330930")
             plt.gca().set_facecolor('#33093D')
             plt.xlim(0, 100)
