@@ -47,7 +47,7 @@ if uploaded_file:
             plt.ylim(0, 100)
             plt.xticks(range(0, 101, 20), color='white')
             plt.yticks(range(0, 101, 20), color='white')
-            plt.scatter(x, y, color= '#cc1d6e', s=200, alpha=1, zorder=3)
+            plt.scatter(x, y, color= '#2024c9', s=200, alpha=1, zorder=3)
             plt.xlabel('LOW PRIVACY', color='white', fontproperties=prop)
             plt.ylabel('LOW UTILITY', color='white', fontproperties=prop)
             plt.text(0.5, 1.05, 'HIGH PRIVACY', color='white', ha='center', va='center', fontproperties=prop, transform=plt.gca().transAxes)
@@ -58,7 +58,7 @@ if uploaded_file:
                 ax.spines[axis].set_color('white')
                 ax.spines[axis].set_linewidth(2)
 
-            plt.plot([0,100],[100,0],color='#651D6D', linestyle='--')
+            plt.plot([0,100],[100,0],color='#121470', linestyle='--')
             
             plt.grid(True)
             plt.savefig("figure.png")
