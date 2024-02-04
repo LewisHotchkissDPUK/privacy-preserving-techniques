@@ -47,7 +47,7 @@ if uploaded_file:
             plt.ylim(0, 100)
             plt.xticks(range(0, 101, 20), color='white')
             plt.yticks(range(0, 101, 20), color='white')
-            plt.scatter(x, y, color= '#4246ff', s=250, alpha=1, zorder=3)  #4246ff 2024c9
+            plt.scatter(x, y, color= '#ffe342', s=250, alpha=1, zorder=3)  #4246ff 2024c9
             plt.xlabel('LOW PRIVACY', color='white', fontproperties=prop)
             plt.ylabel('LOW UTILITY', color='white', fontproperties=prop)
             plt.text(0.5, 1.05, 'HIGH PRIVACY', color='white', ha='center', va='center', fontproperties=prop, transform=plt.gca().transAxes)
