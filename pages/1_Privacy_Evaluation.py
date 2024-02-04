@@ -2,6 +2,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 from matplotlib import font_manager as fm, rcParams
 import pandas as pd
+import time
 
 st.set_page_config(
     page_title="Evaluation",
@@ -28,6 +29,15 @@ if uploaded_file:
         noise_level = st.slider("Select noise level", 0, 10, 1)
     
     if st.button("Submit"):
+
+        progress_text = "Operation in progress. Please wait."
+        my_bar = st.progress(0, text=progress_text)
+
+        for percent_complete in range(100):
+            time.sleep(0.01)
+            my_bar.progress(percent_complete + 1, text=progress_text)
+        time.sleep(1)
+
         eval_coll, eval_col2 = st.columns(2)
 
         with eval_coll:
