@@ -63,3 +63,10 @@ if uploaded_file:
             plt.grid(True)
             plt.savefig("figure.png")
             st.image("figure.png")
+
+        with eval_col2:
+            st.write("")
+            st.title("Evaluation Metrics")
+            st.metric("Membership Inference Attack", 0.68)
+            st.metric("Classification F1-Score", 0.75)
+            st.metric("Similarity Score", 0.82)
