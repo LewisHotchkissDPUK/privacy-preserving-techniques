@@ -10,7 +10,7 @@ st.set_page_config(
 
 from PIL import Image
 with st.sidebar.container():
-    image = Image.open("Pictures/Picture6.png")
+    image = Image.open("Pictures/Picture8.png")
     st.image(image, use_column_width=True)
 
 col1, col2 = st.columns(2)
