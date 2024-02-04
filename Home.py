@@ -5,4 +5,4 @@ st.set_page_config(
     page_icon="👋",
 )
 
-st.title("Synthetic Data Generation")
+st.title("AI Risk Learning Platform")
