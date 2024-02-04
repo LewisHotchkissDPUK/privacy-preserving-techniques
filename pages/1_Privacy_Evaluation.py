@@ -31,7 +31,7 @@ if uploaded_file:
         eval_coll, eval_col2 = st.columns(2)
 
         with eval_coll:
-            points =[(34, 64)]
+            points =[(34, 88)]
 
             x = list(map(lambda x: x[0], points))
             y = list(map(lambda x: x[1], points))
