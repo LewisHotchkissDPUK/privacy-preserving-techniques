@@ -20,10 +20,10 @@ with col2:
 course1, course2, course3, course4 = st.columns(4)
 
 with course1:
-    st.image('Picture1.png')
+    st.image('Pictures/Picture1.png')
 with course2:
-    st.image('Picture2.png')
+    st.image('Pictures/Picture2.png')
 with course3:
-    st.image('Picture3.png')
+    st.image('Pictures/Picture3.png')
 with course4:
-    st.image('Picture4.png')
+    st.image('Pictures/Picture4.png')
