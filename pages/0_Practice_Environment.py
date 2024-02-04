@@ -2,6 +2,11 @@ import streamlit as st
 #from streamlit_extras.jupyterlite import jupyterlite
 import streamlit.components.v1 as components
 
+from PIL import Image
+with st.sidebar.container():
+    image = Image.open("Pictures/Picture8.png")
+    st.image(image, use_column_width=True)
+
 st.set_page_config(
     page_title="Practice Environment",
     page_icon="👋",

@@ -6,8 +6,6 @@ st.set_page_config(
     layout="wide",
 )
 
-#st.sidebar.image("Pictures/Picture6.png", use_column_width=True)
-
 from PIL import Image
 with st.sidebar.container():
     image = Image.open("Pictures/Picture8.png")
