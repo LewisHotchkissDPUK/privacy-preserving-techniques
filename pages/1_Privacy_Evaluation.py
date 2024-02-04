@@ -31,7 +31,7 @@ if uploaded_file:
         eval_coll, eval_col2 = st.columns(2)
 
         with eval_coll:
-            points =[(34, 88)]
+            points =[(76, 66)]
 
             x = list(map(lambda x: x[0], points))
             y = list(map(lambda x: x[1], points))
@@ -47,7 +47,7 @@ if uploaded_file:
             plt.ylim(0, 100)
             plt.xticks(range(0, 101, 20), color='white')
             plt.yticks(range(0, 101, 20), color='white')
-            plt.scatter(x, y, color= '#2024c9', s=200, alpha=1, zorder=3)
+            plt.scatter(x, y, color= '#2024c9', s=250, alpha=1, zorder=3)
             plt.xlabel('LOW PRIVACY', color='white', fontproperties=prop)
             plt.ylabel('LOW UTILITY', color='white', fontproperties=prop)
             plt.text(0.5, 1.05, 'HIGH PRIVACY', color='white', ha='center', va='center', fontproperties=prop, transform=plt.gca().transAxes)
