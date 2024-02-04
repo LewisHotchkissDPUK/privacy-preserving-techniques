@@ -2,6 +2,5 @@ altair
 numpy
 pandas
 pydeck
-streamlit-extras
 streamlit-pills
 streamlit
