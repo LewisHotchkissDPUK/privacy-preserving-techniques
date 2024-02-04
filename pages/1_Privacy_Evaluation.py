@@ -10,6 +10,11 @@ st.set_page_config(
     layout="wide",
 )
 
+from PIL import Image
+with st.sidebar.container():
+    image = Image.open("Pictures/Picture8.png")
+    st.image(image, use_column_width=True)
+
 st.title("Synthetic Data Evaluation")
 
 uploaded_file = st.file_uploader("Upload a CSV Dataset", type=["csv"])
