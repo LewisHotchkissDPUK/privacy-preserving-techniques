@@ -8,26 +8,10 @@ st.set_page_config(
 
 #st.sidebar.image("Pictures/Picture6.png", use_column_width=True)
 
-#from PIL import Image
-
-#with st.sidebar.container():
-#    image = Image.open("Pictures/Picture6.png")
-#    st.image(image, use_column_width=True)
-
-
-import base64
-
-with open("Pictures/Picture6.png", "rb") as f:
-    data = base64.b64encode(f.read()).decode("utf-8")
-
-    st.sidebar.markdown(
-        f"""
-        <div style="display:table;margin-top:-20%;margin-left:20%;">
-            <img src="data:image/png;base64,{data}" width="100" height="150">
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
+from PIL import Image
+with st.sidebar.container():
+    image = Image.open("Pictures/Picture6.png")
+    st.image(image, use_column_width=True)
 
 col1, col2 = st.columns(2)
 
