@@ -5,5 +5,4 @@ pydeck
 streamlit-pills
 streamlit-ace
 streamlit-extras
-streamlit_code_editor
 streamlit
