@@ -6,6 +6,8 @@ st.set_page_config(
     layout="wide",
 )
 
+st.sidebar.image("Pictures/Picture6.png", use_column_width=True)
+
 col1, col2 = st.columns(2)
 
 with col1:
