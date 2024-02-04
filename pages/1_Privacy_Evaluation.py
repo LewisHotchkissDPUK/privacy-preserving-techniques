@@ -1,6 +1,7 @@
 import streamlit as st
 import matplotlib.pyplot as plt
 from matplotlib import font_manager as fm, rcParams
+import pandas as pd
 
 st.set_page_config(
     page_title="Evaluation",
@@ -8,18 +9,22 @@ st.set_page_config(
     layout="wide",
 )
 
-st.title("Synthetic Data Generation")
+st.title("Synthetic Data Evaluation")
 
 uploaded_file = st.file_uploader("Upload a CSV Dataset", type=["csv"])
 
 if uploaded_file:
+
+    data = pd.read_csv(uploaded_file)
     
     col1, col2 = st.columns(2)
     
     with col1:
-        discrete_cols = st.multiselect("Select discrete columns", ['col1','col2'])
+        discrete_cols = st.multiselect("Select discrete columns", data.columns)
+        identifier_col = st.selectbox("Select identifier column", data.columns)
     
     with col2:
+        prediction_col = st.selectbox("Select prediction column for evaluation", data.columns)
         noise_level = st.slider("Select noise level", 0, 10, 1)
     
     if st.button("Submit"):
