@@ -2,6 +2,12 @@ import streamlit as st
 import matplotlib.pyplot as plt
 from matplotlib import font_manager as fm, rcParams
 
+st.set_page_config(
+    page_title="Evaluation",
+    page_icon="👋",
+    layout="wide",
+)
+
 st.title("Synthetic Data Generation")
 
 uploaded_file = st.file_uploader("Upload a CSV Dataset", type=["csv"])
@@ -30,8 +36,8 @@ if uploaded_file:
             rcParams["font.family"] = prop.get_name()
 
             plt.rc('grid', linestyle="-", color='white', linewidth=1, alpha=1)
-            plt.figure(figsize=(6, 6), facecolor="#330930")
-            plt.gca().set_facecolor('#33093D')
+            plt.figure(figsize=(6, 6), facecolor="#050526")
+            plt.gca().set_facecolor('#050526')
             plt.xlim(0, 100)
             plt.ylim(0, 100)
             plt.xticks(range(0, 101, 20), color='white')
