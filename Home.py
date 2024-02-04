@@ -23,6 +23,8 @@ with col2:
              including: differential privacy, synthetic data, and homomorphic encryption. Throughout the course, you will be able to try practical activities to implement some of these techniques yourself
              and run built-in attacks to evaluate their effectiveness.''')
     
+    st.write("")
+    st.write("")
     st.button("Start Now")
     
 st.write("")
