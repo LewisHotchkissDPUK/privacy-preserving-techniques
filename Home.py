@@ -43,8 +43,6 @@ with course3:
 with course4:
     st.image('Pictures/Picture4.png')
 
-st.write("")
-
 with course1:
     st.image('Pictures/Picture9.png')
 with course2:
