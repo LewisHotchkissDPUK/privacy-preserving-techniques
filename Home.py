@@ -18,7 +18,7 @@ with col2:
              including: differential privacy, synthetic data, and homomorphic encryption.''')
     
 st.write()
-st.write()
+st.write("Courses")
 
 course1, course2, course3, course4 = st.columns(4)
 
