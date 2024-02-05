@@ -14,20 +14,6 @@ with st.sidebar.container():
     st.image(image, use_column_width=True)
 
 
-
-
-
-def hide_pages(pages_to_hide):
-    for page in pages_to_hide:
-        st.sidebar.markdown(f"## {page}")
-        st.sidebar.markdown("This page is hidden.")
-
-pages_to_hide = ["Privacy_Evaluation"]
-hide_pages(pages_to_hide)        
-
-
-
-
 col1, col2 = st.columns(2)
 
 with col1:
