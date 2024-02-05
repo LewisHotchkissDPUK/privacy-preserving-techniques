@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 from matplotlib import font_manager as fm, rcParams
 import pandas as pd
 import time
+import streamlit_extras
 
 st.set_page_config(
     page_title="Resources",
