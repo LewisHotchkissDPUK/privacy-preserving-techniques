@@ -22,7 +22,7 @@ def hide_pages(pages_to_hide):
         st.sidebar.markdown(f"## {page}")
         st.sidebar.markdown("This page is hidden.")
 
-pages_to_hide = ["Privacy Evaluation"]
+pages_to_hide = ["Privacy_Evaluation"]
 hide_pages(pages_to_hide)        
 
 
