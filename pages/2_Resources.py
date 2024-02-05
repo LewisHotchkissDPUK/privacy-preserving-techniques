@@ -18,6 +18,9 @@ with st.sidebar.container():
 
 st.title("Synthetic Data Resources")
 
+from streamlit_player import st_player
+st_player("https://youtu.be/y5IQZRCyBts")
+
 from streamlit_ace import st_ace
 content = st_ace()
 content
