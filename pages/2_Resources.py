@@ -5,7 +5,7 @@ import pandas as pd
 import time
 import streamlit_extras
 
-from st_clickable_images import clickable_images
+#from st_clickable_images import clickable_images
 
 
 st.set_page_config(
