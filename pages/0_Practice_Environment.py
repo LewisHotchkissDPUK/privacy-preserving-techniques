@@ -70,6 +70,31 @@ with col2:
         height=600
     )
 
+
+st.markdown(""" 
+div.stButton > button:first-child {
+background-color: #00cc00;color:white;font-size:20px;height:3em;width:30em;border-radius:10px 10px 10px 10px;
+}
+.css-2trqyj:focus:not(:active) {
+border-color: #2024c9;
+box-shadow: none;
+color: #ffffff;
+background-color: #2024c9;
+}
+.css-2trqyj:focus:(:active) {
+border-color: #fcd703;
+box-shadow: none;
+color: #ffffff;
+background-color: #2024c9;
+}
+.css-2trqyj:focus:active){
+background-color: #2024c9;
+border-color: #fcd703;
+box-shadow: none;
+color: #ffffff;
+background-color: #2024c9;
+}
+""", unsafe_allow_html=True)
     
 
 button_col1, button_col2 = st.columns([1,1])   
