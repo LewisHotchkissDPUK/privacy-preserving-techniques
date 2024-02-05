@@ -1,4 +1,5 @@
 import streamlit as st
+from streamlit_extras.switch_page_button import switch_page
 
 st.set_page_config(
     page_title="Home",
@@ -26,7 +27,8 @@ with col2:
     
     st.write("")
     st.write("")
-    st.button("Start Now")
+    if st.button("Start Now"):
+        switch_page("Practice_Environment")
     
 st.write("")
 st.write("")
