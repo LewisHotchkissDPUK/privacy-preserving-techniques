@@ -1,6 +1,7 @@
 import streamlit as st
 #from streamlit_extras.jupyterlite import jupyterlite
 import streamlit.components.v1 as components
+from streamlit_extras.switch_page_button import switch_page
 
 st.set_page_config(
     page_title="Practice Environment",
@@ -71,10 +72,15 @@ with col2:
 
     
 
-    
+button_col1, button_col2 = st.columns([1,1])   
 
-if st.button("Next"):
-    st.write()
+with button_col1:
+    if st.button("Back", use_container_width=True):
+        switch_page("Home")
+
+with button_col2:
+    if st.button("Next", use_container_width=True):
+        switch_page("Resources")
 
 
 #from streamlit_ace import st_ace
