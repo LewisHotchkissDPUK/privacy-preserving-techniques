@@ -18,6 +18,10 @@ with st.sidebar.container():
 
 st.title("Synthetic Data Resources")
 
+from streamlit_ace import st_ace
+content = st_ace()
+content
+
 #video_file = open('Pictures/SyntheticData.mp4', 'rb')
 #video_bytes = video_file.read()
 
