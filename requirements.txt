@@ -6,4 +6,5 @@ streamlit-pills
 streamlit-ace
 streamlit-extras
 streamlit-player
+st-clickable-images
 streamlit
