@@ -23,22 +23,26 @@ with col1:
     with st.container(height=600):
         st.header('Creating Synthetic Data')
 
-        st.write("In this tutorial, we'll use the SDV to create synthetic data for a single table and evaluate it. The SDV uses machine learning to learn patterns from real data and emulates them when creating synthetic data. We'll use the **CTGAN** algorithm to do this. CTGAN uses generative adversarial networks (GANs) to create synthesise data with high fidelity.")
+        st.write("In this tutorial, we'll use the SDV package to create synthetic data for a table and evaluate it. SDV uses machine learning to learn patterns from real data and emulates them when creating synthetic data. In this example, we will use **CTGAN** to create synthetic data with high fidelity.")
 
 
         st.subheader('Load demo data')
 
-        code = '''from sdv.datasets.demo import download_demo
-
-real_data, metadata = download_demo(
-    modality='single_table',
-    dataset_name='fake_hotel_guests'
-)
+        code = '''data = pd.read_csv("dementia_dataset.csv")
         '''
 
         st.code(code)
 
-        st.write("Now visualise this metadata")
+        st.write("Now detect the metadata from the data")
+
+        code2 = '''from sdv.metadata import SingleTableMetadata
+metadata = SingleTableMetadata()
+metadata.detect_from_dataframe(data)
+metadata'''
+
+        st.code(code2)
+
+        st.write("Visualise this metadata")
 
         with st.expander("Reveal Answer"):
             st.write()
